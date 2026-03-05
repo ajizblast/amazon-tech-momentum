@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 220 89% 50%;
+    --background-light: 240 14% 96%;
+    --background-dark: 218 35% 10%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans min-h-screen flex flex-col overflow-x-hidden;
+  }
+}
